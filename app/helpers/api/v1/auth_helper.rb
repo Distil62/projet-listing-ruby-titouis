@@ -1,2 +1,2 @@
-module Api::V1::AuthHelper
+  module Api::V1::AuthHelper
 end

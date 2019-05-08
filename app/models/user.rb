@@ -38,4 +38,11 @@ class User
     "caca"
   end
 
+  def find_for_database(email, password)
+    User.find({
+        email: email,
+        password: password
+              }).first
+  end
+
 end

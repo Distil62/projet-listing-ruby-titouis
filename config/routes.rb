@@ -3,6 +3,10 @@
 Rails.application.routes.draw do
   namespace :api, format: 'json' do
     namespace :v1 do
+      # Authentication
+      post 'auth_user' => 'auth#authenticate_user'
+
+      # Listings
       post 'annonce/create', to: 'annonce#create'
       post 'annonce/update/:id', to: 'annonce#update'
       get 'annonce/delete/:id', to: 'annonce#delete'

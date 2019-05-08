@@ -9,6 +9,7 @@ gem 'rails', '~> 5.2.2'
 # Use Puma as the app server
 gem 'mongoid'
 gem 'devise'
+gem 'jwt'
 gem 'shrine'
 gem "shrine-mongoid"
 gem 'puma', '~> 3.11'
