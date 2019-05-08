@@ -1,6 +1,6 @@
 version: "3"
 services:
   rails:
-    image: ruby:2.5-alpine
+    image: rails
     ports:
       - "3000:6555"
