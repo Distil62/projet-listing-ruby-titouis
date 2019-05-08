@@ -6,6 +6,13 @@ RUN apk install git -y
 
 RUN git clone https://github.com/Distil62/projet-listing-ruby-titouis.git project
 RUN cd project
+
+RUN ls
+RUN echo "#####################"
+RUN pwd
+RUN echo "#####################"
+RUN ls
+
 RUN bundle install
 
 ADD ./init.sh /init.sh
