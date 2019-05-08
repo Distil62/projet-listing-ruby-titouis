@@ -1,6 +1,9 @@
 version: "3"
 services:
   rails:
-    image: ./rails/
+    container_name: rails
+    network_mode: host
+    build:
+      context: ./rails/
     ports:
       - "3000:6555"
