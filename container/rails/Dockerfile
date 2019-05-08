@@ -8,4 +8,7 @@ RUN git clone https://github.com/Distil62/projet-listing-ruby-titouis.git projec
 RUN cd project
 RUN bundle install
 
+ADD ./init.sh /init.sh
+RUN chmod 755 /init.sh
+
 CMD ["/init.sh"]
