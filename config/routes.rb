@@ -13,6 +13,16 @@ Rails.application.routes.draw do
       get 'annonce/get/:id', to: 'annonce#get'
       get 'annonce/', to: 'annonce#index'
       root 'annonce#index'
+
+      # Category
+      get 'category/', to: 'category#index'
+      get 'category/id/:id', to: 'category#get_id'
+      get 'category/name/:name', to: 'category#get_name'
+      post 'category/create', to: 'category#create'
+
+      # User
+      get 'account/', to: 'user#index'
+      get 'account/:id', to: 'user#get'
     end
   end
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
