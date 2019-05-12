@@ -19,6 +19,7 @@
             <%= f.label :remember_me, class: "fg-white" %>
           </div>
         <% end -%>
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
         <%= render "devise/shared/links" %>
         <div class="actions">
           <%= f.submit "Log in", class: 'button bg-orange fg-white float-right' %>
