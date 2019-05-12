@@ -11,7 +11,8 @@ class ListingsController < ApplicationController
 
   def new
     @Listing = Listing.new
-    redirect_to 'list_path' unless current_user
+
+    redirect_to listings_path unless user_signed_in?
   end
 
   def create

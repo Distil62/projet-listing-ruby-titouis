@@ -33,5 +33,4 @@ Rails.application.routes.draw do
   resource :listings
   post '/listings/contact', to: 'contact#contact'
   get 'listings_details', action: :detail, controller: 'listings'
-
 end
